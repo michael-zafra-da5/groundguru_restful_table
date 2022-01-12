@@ -22,9 +22,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableview.delegate = self
         tableview.dataSource = self
         
+        //Start loading...
         AF.request("https://reqres.in/api/users?page=1").responseString(completionHandler: { response in
             switch response.result {
             case .success(let value):
+                //end loading..
                 print("value**: \(value)")
                 do {
                     let data = try value.data(using: .utf8)!
@@ -40,7 +42,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     print("error")
                 }
             case .failure(let error):
+                //end loading..
                 print(error)
+                let alert = UIAlertController(title: "Error", message: error.errorDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         })
     }
