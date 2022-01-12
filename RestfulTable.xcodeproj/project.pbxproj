@@ -19,6 +19,7 @@
 		FF9012B9278E622D0039025F /* RestfulTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012B8278E622D0039025F /* RestfulTableUITestsLaunchTests.swift */; };
 		FF9012C9278E6DA50039025F /* UserTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012C8278E6DA50039025F /* UserTableCell.swift */; };
 		FF9012CB278E76FD0039025F /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012CA278E76FC0039025F /* ListResponse.swift */; };
+		FF9012CD278E9A440039025F /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9012CC278E9A430039025F /* Details.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FF9012B8278E622D0039025F /* RestfulTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FF9012C8278E6DA50039025F /* UserTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableCell.swift; sourceTree = "<group>"; };
 		FF9012CA278E76FC0039025F /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		FF9012CC278E9A430039025F /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				FF90129B278E622A0039025F /* Main.storyboard */,
 				FF9012A0278E622D0039025F /* LaunchScreen.storyboard */,
 				FF9012C8278E6DA50039025F /* UserTableCell.swift */,
+				FF9012CC278E9A430039025F /* Details.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				FF9012A2278E622D0039025F /* LaunchScreen.storyboard in Resources */,
 				FF90129F278E622C0039025F /* Assets.xcassets in Resources */,
 				FF90129D278E622A0039025F /* Main.storyboard in Resources */,
+				FF9012CD278E9A440039025F /* Details.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
