@@ -46,7 +46,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let storyboard = UIStoryboard(name: "Details", bundle: nil)
+        let detailVC = storyboard.instantiateViewController(withIdentifier: "detailSB") as! DetailsViewController
+        detailVC.segueData = userList[indexPath.row]
+        self.present(detailVC, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
