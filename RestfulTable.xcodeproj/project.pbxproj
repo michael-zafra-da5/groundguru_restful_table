@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46BB3521298715CD7CAB8D79 /* Pods_RestfulTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D9E2ED903D9AE208904F6C /* Pods_RestfulTable.framework */; };
+		FF901296278E622A0039025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901295278E622A0039025F /* AppDelegate.swift */; };
+		FF901298278E622A0039025F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901297278E622A0039025F /* SceneDelegate.swift */; };
+		FF90129A278E622A0039025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901299278E622A0039025F /* ViewController.swift */; };
+		FF90129D278E622A0039025F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90129B278E622A0039025F /* Main.storyboard */; };
+		FF90129F278E622C0039025F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90129E278E622C0039025F /* Assets.xcassets */; };
+		FF9012A2278E622D0039025F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9012A0278E622D0039025F /* LaunchScreen.storyboard */; };
+		FF9012AD278E622D0039025F /* RestfulTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012AC278E622D0039025F /* RestfulTableTests.swift */; };
+		FF9012B7278E622D0039025F /* RestfulTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012B6278E622D0039025F /* RestfulTableUITests.swift */; };
+		FF9012B9278E622D0039025F /* RestfulTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012B8278E622D0039025F /* RestfulTableUITestsLaunchTests.swift */; };
+		FF9012C9278E6DA50039025F /* UserTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012C8278E6DA50039025F /* UserTableCell.swift */; };
+		FF9012CB278E76FD0039025F /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9012CA278E76FC0039025F /* ListResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF9012A9278E622D0039025F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF90128A278E62290039025F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF901291278E62290039025F;
+			remoteInfo = RestfulTable;
+		};
+		FF9012B3278E622D0039025F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF90128A278E62290039025F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF901291278E62290039025F;
+			remoteInfo = RestfulTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61D9E2ED903D9AE208904F6C /* Pods_RestfulTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B897A28B815A8EAA35145170 /* Pods-RestfulTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulTable.release.xcconfig"; path = "Target Support Files/Pods-RestfulTable/Pods-RestfulTable.release.xcconfig"; sourceTree = "<group>"; };
+		DECCEAC05657A940777E8A39 /* Pods-RestfulTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulTable.debug.xcconfig"; path = "Target Support Files/Pods-RestfulTable/Pods-RestfulTable.debug.xcconfig"; sourceTree = "<group>"; };
+		FF901292278E622A0039025F /* RestfulTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF901295278E622A0039025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF901297278E622A0039025F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF901299278E622A0039025F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF90129C278E622A0039025F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF90129E278E622C0039025F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF9012A1278E622D0039025F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF9012A3278E622D0039025F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9012A8278E622D0039025F /* RestfulTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestfulTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9012AC278E622D0039025F /* RestfulTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulTableTests.swift; sourceTree = "<group>"; };
+		FF9012B2278E622D0039025F /* RestfulTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestfulTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9012B6278E622D0039025F /* RestfulTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulTableUITests.swift; sourceTree = "<group>"; };
+		FF9012B8278E622D0039025F /* RestfulTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF9012C8278E6DA50039025F /* UserTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableCell.swift; sourceTree = "<group>"; };
+		FF9012CA278E76FC0039025F /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF90128F278E62290039025F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BB3521298715CD7CAB8D79 /* Pods_RestfulTable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012A5278E622D0039025F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012AF278E622D0039025F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		930CB2F96B08EFD069635A58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61D9E2ED903D9AE208904F6C /* Pods_RestfulTable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5A05A8254FAAAE066E76792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DECCEAC05657A940777E8A39 /* Pods-RestfulTable.debug.xcconfig */,
+				B897A28B815A8EAA35145170 /* Pods-RestfulTable.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF901289278E62290039025F = {
+			isa = PBXGroup;
+			children = (
+				FF901294278E622A0039025F /* RestfulTable */,
+				FF9012AB278E622D0039025F /* RestfulTableTests */,
+				FF9012B5278E622D0039025F /* RestfulTableUITests */,
+				FF901293278E622A0039025F /* Products */,
+				A5A05A8254FAAAE066E76792 /* Pods */,
+				930CB2F96B08EFD069635A58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF901293278E622A0039025F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF901292278E622A0039025F /* RestfulTable.app */,
+				FF9012A8278E622D0039025F /* RestfulTableTests.xctest */,
+				FF9012B2278E622D0039025F /* RestfulTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF901294278E622A0039025F /* RestfulTable */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012C7278E627B0039025F /* Controllers */,
+				FF9012C6278E62720039025F /* Views */,
+				FF9012C5278E62680039025F /* Models */,
+				FF901295278E622A0039025F /* AppDelegate.swift */,
+				FF901297278E622A0039025F /* SceneDelegate.swift */,
+				FF90129E278E622C0039025F /* Assets.xcassets */,
+				FF9012A3278E622D0039025F /* Info.plist */,
+			);
+			path = RestfulTable;
+			sourceTree = "<group>";
+		};
+		FF9012AB278E622D0039025F /* RestfulTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012AC278E622D0039025F /* RestfulTableTests.swift */,
+			);
+			path = RestfulTableTests;
+			sourceTree = "<group>";
+		};
+		FF9012B5278E622D0039025F /* RestfulTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012B6278E622D0039025F /* RestfulTableUITests.swift */,
+				FF9012B8278E622D0039025F /* RestfulTableUITestsLaunchTests.swift */,
+			);
+			path = RestfulTableUITests;
+			sourceTree = "<group>";
+		};
+		FF9012C5278E62680039025F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF9012CA278E76FC0039025F /* ListResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF9012C6278E62720039025F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF90129B278E622A0039025F /* Main.storyboard */,
+				FF9012A0278E622D0039025F /* LaunchScreen.storyboard */,
+				FF9012C8278E6DA50039025F /* UserTableCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF9012C7278E627B0039025F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF901299278E622A0039025F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF901291278E62290039025F /* RestfulTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9012BC278E622D0039025F /* Build configuration list for PBXNativeTarget "RestfulTable" */;
+			buildPhases = (
+				3F380BEB579515581ACFE28C /* [CP] Check Pods Manifest.lock */,
+				FF90128E278E62290039025F /* Sources */,
+				FF90128F278E62290039025F /* Frameworks */,
+				FF901290278E62290039025F /* Resources */,
+				F5F8E025C498DBCABC714032 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestfulTable;
+			productName = RestfulTable;
+			productReference = FF901292278E622A0039025F /* RestfulTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF9012A7278E622D0039025F /* RestfulTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9012BF278E622D0039025F /* Build configuration list for PBXNativeTarget "RestfulTableTests" */;
+			buildPhases = (
+				FF9012A4278E622D0039025F /* Sources */,
+				FF9012A5278E622D0039025F /* Frameworks */,
+				FF9012A6278E622D0039025F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF9012AA278E622D0039025F /* PBXTargetDependency */,
+			);
+			name = RestfulTableTests;
+			productName = RestfulTableTests;
+			productReference = FF9012A8278E622D0039025F /* RestfulTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF9012B1278E622D0039025F /* RestfulTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF9012C2278E622D0039025F /* Build configuration list for PBXNativeTarget "RestfulTableUITests" */;
+			buildPhases = (
+				FF9012AE278E622D0039025F /* Sources */,
+				FF9012AF278E622D0039025F /* Frameworks */,
+				FF9012B0278E622D0039025F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF9012B4278E622D0039025F /* PBXTargetDependency */,
+			);
+			name = RestfulTableUITests;
+			productName = RestfulTableUITests;
+			productReference = FF9012B2278E622D0039025F /* RestfulTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF90128A278E62290039025F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					FF901291278E62290039025F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FF9012A7278E622D0039025F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FF901291278E62290039025F;
+					};
+					FF9012B1278E622D0039025F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FF901291278E62290039025F;
+					};
+				};
+			};
+			buildConfigurationList = FF90128D278E62290039025F /* Build configuration list for PBXProject "RestfulTable" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF901289278E62290039025F;
+			productRefGroup = FF901293278E622A0039025F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF901291278E62290039025F /* RestfulTable */,
+				FF9012A7278E622D0039025F /* RestfulTableTests */,
+				FF9012B1278E622D0039025F /* RestfulTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF901290278E62290039025F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9012A2278E622D0039025F /* LaunchScreen.storyboard in Resources */,
+				FF90129F278E622C0039025F /* Assets.xcassets in Resources */,
+				FF90129D278E622A0039025F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012A6278E622D0039025F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012B0278E622D0039025F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F380BEB579515581ACFE28C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F8E025C498DBCABC714032 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulTable/Pods-RestfulTable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulTable/Pods-RestfulTable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestfulTable/Pods-RestfulTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF90128E278E62290039025F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF90129A278E622A0039025F /* ViewController.swift in Sources */,
+				FF9012CB278E76FD0039025F /* ListResponse.swift in Sources */,
+				FF9012C9278E6DA50039025F /* UserTableCell.swift in Sources */,
+				FF901296278E622A0039025F /* AppDelegate.swift in Sources */,
+				FF901298278E622A0039025F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012A4278E622D0039025F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9012AD278E622D0039025F /* RestfulTableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9012AE278E622D0039025F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9012B7278E622D0039025F /* RestfulTableUITests.swift in Sources */,
+				FF9012B9278E622D0039025F /* RestfulTableUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF9012AA278E622D0039025F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF901291278E62290039025F /* RestfulTable */;
+			targetProxy = FF9012A9278E622D0039025F /* PBXContainerItemProxy */;
+		};
+		FF9012B4278E622D0039025F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF901291278E62290039025F /* RestfulTable */;
+			targetProxy = FF9012B3278E622D0039025F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF90129B278E622A0039025F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF90129C278E622A0039025F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF9012A0278E622D0039025F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF9012A1278E622D0039025F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF9012BA278E622D0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF9012BB278E622D0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF9012BD278E622D0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECCEAC05657A940777E8A39 /* Pods-RestfulTable.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestfulTable/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF9012BE278E622D0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B897A28B815A8EAA35145170 /* Pods-RestfulTable.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RestfulTable/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF9012C0278E622D0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestfulTable.app/RestfulTable";
+			};
+			name = Debug;
+		};
+		FF9012C1278E622D0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestfulTable.app/RestfulTable";
+			};
+			name = Release;
+		};
+		FF9012C3278E622D0039025F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestfulTable;
+			};
+			name = Debug;
+		};
+		FF9012C4278E622D0039025F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3GCFJ6RJM9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krdevteam.RestfulTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RestfulTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF90128D278E62290039025F /* Build configuration list for PBXProject "RestfulTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9012BA278E622D0039025F /* Debug */,
+				FF9012BB278E622D0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9012BC278E622D0039025F /* Build configuration list for PBXNativeTarget "RestfulTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9012BD278E622D0039025F /* Debug */,
+				FF9012BE278E622D0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9012BF278E622D0039025F /* Build configuration list for PBXNativeTarget "RestfulTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9012C0278E622D0039025F /* Debug */,
+				FF9012C1278E622D0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF9012C2278E622D0039025F /* Build configuration list for PBXNativeTarget "RestfulTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF9012C3278E622D0039025F /* Debug */,
+				FF9012C4278E622D0039025F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF90128A278E62290039025F /* Project object */;
+}
