@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46BB3521298715CD7CAB8D79 /* Pods_RestfulTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D9E2ED903D9AE208904F6C /* Pods_RestfulTable.framework */; };
+		FF054D532797A3BA00CC1C9E /* UserCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF054D522797A3BA00CC1C9E /* UserCollectionCell.swift */; };
+		FF054D562797B42000CC1C9E /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF054D552797B42000CC1C9E /* UIImageExt.swift */; };
 		FF901296278E622A0039025F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901295278E622A0039025F /* AppDelegate.swift */; };
 		FF901298278E622A0039025F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901297278E622A0039025F /* SceneDelegate.swift */; };
 		FF90129A278E622A0039025F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF901299278E622A0039025F /* ViewController.swift */; };
@@ -45,6 +47,8 @@
 		61D9E2ED903D9AE208904F6C /* Pods_RestfulTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B897A28B815A8EAA35145170 /* Pods-RestfulTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulTable.release.xcconfig"; path = "Target Support Files/Pods-RestfulTable/Pods-RestfulTable.release.xcconfig"; sourceTree = "<group>"; };
 		DECCEAC05657A940777E8A39 /* Pods-RestfulTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulTable.debug.xcconfig"; path = "Target Support Files/Pods-RestfulTable/Pods-RestfulTable.debug.xcconfig"; sourceTree = "<group>"; };
+		FF054D522797A3BA00CC1C9E /* UserCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionCell.swift; sourceTree = "<group>"; };
+		FF054D552797B42000CC1C9E /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
 		FF901292278E622A0039025F /* RestfulTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF901295278E622A0039025F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF901297278E622A0039025F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FF054D542797B3FD00CC1C9E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF054D552797B42000CC1C9E /* UIImageExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FF901289278E62290039025F = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		FF901294278E622A0039025F /* RestfulTable */ = {
 			isa = PBXGroup;
 			children = (
+				FF054D542797B3FD00CC1C9E /* Extensions */,
 				FF9012C7278E627B0039025F /* Controllers */,
 				FF9012C6278E62720039025F /* Views */,
 				FF9012C5278E62680039025F /* Models */,
@@ -177,6 +190,7 @@
 				FF9012A0278E622D0039025F /* LaunchScreen.storyboard */,
 				FF9012C8278E6DA50039025F /* UserTableCell.swift */,
 				FF9012CC278E9A430039025F /* Details.storyboard */,
+				FF054D522797A3BA00CC1C9E /* UserCollectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -368,10 +382,12 @@
 			files = (
 				FF90129A278E622A0039025F /* ViewController.swift in Sources */,
 				FF9012D1278EA4AA0039025F /* DetailResponse.swift in Sources */,
+				FF054D562797B42000CC1C9E /* UIImageExt.swift in Sources */,
 				FF9012CB278E76FD0039025F /* ListResponse.swift in Sources */,
 				FF9012C9278E6DA50039025F /* UserTableCell.swift in Sources */,
 				FF901296278E622A0039025F /* AppDelegate.swift in Sources */,
 				FF901298278E622A0039025F /* SceneDelegate.swift in Sources */,
+				FF054D532797A3BA00CC1C9E /* UserCollectionCell.swift in Sources */,
 				FF9012CF278E9C430039025F /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
