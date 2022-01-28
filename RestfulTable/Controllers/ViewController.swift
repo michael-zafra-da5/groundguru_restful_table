@@ -123,6 +123,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             collectionView.reloadData()
         }
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("Deleting: \(userList[indexPath.row])")
+            deleteToDatabase(user: userList[indexPath.row])
+            userList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
+    
+    func deleteToDatabase(user: UserData) {
+        print("Deleted: \(user)")
+    }
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
